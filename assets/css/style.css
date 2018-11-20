@@ -33,7 +33,7 @@ html{
 
 #jumbo-land{
 	height: 100vh;
-	padding-top: 20%;
+	padding-top: 15%;
 	background-color: #333;
 	border-radius: 0;
 	background-image: url(../images/pexels-photo-327131.jpeg);
@@ -46,10 +46,20 @@ html{
 	-o-background-size: cover;
 }
 
+/*#jumbo-land:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+}*/
+
 .jumbotron h1{
 	color: #f2f2f2;
 }
 
+.logo{
+	height: 100%;
+	width: 50px;
+}
 class*="col"]{
 	border: 3px groove transparent;
 	/*float: left;*/
@@ -80,20 +90,22 @@ class*="col"]{
 	/*border: 1px groove #FF6978;*/
 	/*background-color: rgba(255, 105, 120, 0.5);*/
 	/*color: red;*/
-	width: 50%;
+	width: 40%;
 	/*margin-bottom: 20px;*/
 	/*bottom: 20%;*/
 	/*height: 20px;*/
 	padding: 0;
 	margin: 0;
 	/*font-size: 10px;*/
+	/*float: right;*/
 
 
 }
 
-.subscribe label{
-	font-family: 'Mukta', sans-serif;
+.subscribe span{
+	/*font-family: 'Mukta', sans-serif;*/
 	color: red;
+	font-size:  20px;
 }
 
 .subscribe button{
@@ -102,8 +114,12 @@ class*="col"]{
 	color: white;
 	border-radius: 5px;
 	width: 100px;
-}
 
+}
+.subs-email{
+	background-color: pink;
+	opacity: 0.5;
+}
 
 .search-container{
 	border: 1px solid white;
@@ -131,12 +147,12 @@ strong{
 
 
 #carousel-home{
-	height: 70vh;
+	height: 90vh;
 	top: 50px;
 	/*padding-top: 20%;*/
 	border: 2px solid green;
-	width: 80vw;
-	left: 10vw;
+	width: 100%;
+	/*left: 10vw;*/
 }
 
 #carousel-home img{
