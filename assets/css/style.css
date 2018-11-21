@@ -7,6 +7,16 @@
 html{
 	/*height: 100%;*/
 }
+body{
+	background-image: url(../images/pexels-photo-327131.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
 /*landing page*/
 .jumbotron hr{
 	background-color: #E51666;
@@ -15,7 +25,7 @@ html{
 	width: 200px;
 	height: 50px;
 	margin: 0 auto;
-	border: 3px groove #FF6978;
+	border: 2px groove #FF6978;
 	background-color: transparent;
 }
 .container > .btn:hover{
@@ -54,23 +64,24 @@ html{
 
 .jumbotron h1{
 	color: #f2f2f2;
+	letter-spacing: 0.5em;
 }
 
 .logo{
 	height: 100%;
 	width: 50px;
 }
-class*="col"]{
-	border: 3px groove transparent;
+[class*="col"]{
+	border: 1px groove green;
 	/*float: left;*/
 }
 .navbar{
 	/*background-color: pink;*/
-	position: fixed;
-	width: 100vw;
+	/*position: fixed;*/
+	/*width: 100vw;*/
 	/*height: 100px;*/
 	/*z-index: 200;*/
-	height: 50px;
+	/*height: 50px;*/
 }
 .navbar:hover{
 	background-color: pink;
@@ -78,14 +89,16 @@ class*="col"]{
 }
 #navbar > a,
 #navbar-home > a{
-	color: #E51666;
-	font-size: 30px;
+	/*color: #E51666;*/
+	/*font-size: 30px;*/
 
 }
-#navbar-home{
+/*#navbar-home{
+	background-color: pink;
+}*/
+#navbar-contact{
 	background-color: pink;
 }
-
 .subscribe{
 	/*border: 1px groove #FF6978;*/
 	/*background-color: rgba(255, 105, 120, 0.5);*/
@@ -122,8 +135,14 @@ class*="col"]{
 }
 
 .search-container{
-	border: 1px solid white;
+	/*border: 1px solid white;*/
+	/*border-radius: 10px;*/
+	/*background-color: transparent;*/
 
+}
+.fa-search{
+/*	background-color: transparent;
+	padding: 0;*/
 }
 
 .search{
@@ -145,43 +164,68 @@ strong{
 /*end landing page*/
 
 
-
 #carousel-home{
-	height: 90vh;
-	top: 50px;
-	/*padding-top: 20%;*/
-	border: 2px solid green;
+	/*height: 80vh;*/
+	/*border: 3px solid green;*/
 	width: 100%;
-	/*left: 10vw;*/
+	height: 100%;
 }
 
 #carousel-home img{
-	height: 70vh;
-	max-height: 70vh;
+	height: 100vh;
+	max-height: 100vh;
 }
 
-.container-fluid{
-	margin: 0;
+.homepage-btn{
+	position: absolute;
+	transform:translate(400px,-300px);
+	width: 300px;
+	height: 50px;
 	padding: 0;
+	margin:0;
 
 }
+
+.homepage-btn > .btn{
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	border: 3px groove pink;
+	/*color: red;*/
+	font-weight: bold;
+}
+.homepage-btn > .btn > a{
+	color: red;
+}
+
+.homepage-btn > .btn:hover{
+	background-color: pink;
+	border: 3px groove red;
+}
+
+/*.carousel-img{
+	height: 100vh;
+	width: 100%;
+}*/
+
 .footer{
-	position: fixed;
+	/*background-color: pink;*/
+	/*position: fixed;*/
 /*	padding: 0;
 	margin: 0;*/
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: pink;
+	/*left: 0;*/
+	/*bottom: 0;*/
+	/*width: 100%;*/
+	/*background-color: pink;*/
 	/*text-align: center;*/
-	height: 40px;
+	/*height: 40px;*/
 }
 
 /* Style all font awesome icons */
 .fa {
 	padding: 10px;
 	font-size: 30px;
-	width: 100%;
+	width: 5%;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 100%;
@@ -210,20 +254,106 @@ strong{
   color: white;
 }
 
-.social{
-	width: 50%;
-}
-
-#contact{
-	/*height: 70vh;*/
-	top: 50px;
-	/*padding-top: 20%;*/
-	border: 2px solid green;
-	/*width: 80vw;*/
-	/*left: 10vw;*/
+form > input {
+	background-color: pink;
 }
 
 
+#contact-page{
+	/*border: 2px solid green;*/
+	margin-top: 58px;
+	height: 90vh;
+}
+
+#map{
+	/*border: 2px solid blue;*/
+	height: 350px;
+}
+#social{
+	height: 50%;
+	/*border: 2px solid red;*/
+	height: 90px;
+	bottom: 80px; 
+}
+
+#contact-page form,
+.map{
+	border: 5px groove pink;
+	border-radius: 10px;
+}
+
+
+#jumbotron-about{
+/*	background-color: #141414;
+	height: 100vh;
+	border-radius: 0;
+	margin-bottom: 0;*/
+	height: 100vh;
+	padding-top: 15%;
+	background-color: #333;
+	border-radius: 0;
+	background-image: url(../images/pexels-photo-533322.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/*scroll-behavior: none;*/
+}
+#landing-about{
+	color: #f2f2f2;
+	font-size: 5em;
+	padding-top: 25vh;
+	letter-spacing: 5px;
+	font-family: 'Federant', cursive;
+}
+
+#vission-right,
+#vission-left,
+#mission-right,
+#mission-left{
+	background-color: pink;
+	border: 3px groove pink;
+	border-radius: 15px;
+}
+
+#vission-right{
+	/*height: 100%;*/
+	background-image: url(../images/pexels-photo-1362534.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+
+#mission-left{
+	/*height: 100%;*/
+	background-image: url(../images/summer-dessert-sweet-ice-cream.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+
+#gallery-items .card{
+	height: 400px;
+}
+
+#gallery-items .card img {
+	height: 250px;
+	margin-bottom: 50px;
+
+}
 
 /* start of custom media queries */
 

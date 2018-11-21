@@ -2,13 +2,14 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Federant', cursive;
+	/*font-family: 'Gloria Hallelujah', cursive;*/
+	font-family: 'Indie Flower', cursive;
 }
 html{
 	/*height: 100%;*/
 }
 
-class*="col"]{
+[class*="col"]{
 	border: 3px groove green;
 	/*float: left;*/
 }
@@ -75,8 +76,66 @@ class*="col"]{
 }
 */
 
+#jumbotron-about{
+	background-color: #141414;
+	height: 90vh;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+#landing-about{
+	color: #f2f2f2;
+	font-size: 5em;
+	padding-top: 20vh;
+	letter-spacing: 5px;
+	font-family: 'Federant', cursive;
+}
+
+.about-tags{
+	font-weight: bold;
+	font-family: 'Federant', cursive;
+
+}
+
+#mission{
+
+	height: 100%;
+	background-color: #141414;
+	color: #f2f2f2;
+}
+#vission{
+
+	height: 100%;
+	background-color: #f2f2f2;
+	color: #141414;
+}
 
 
+
+
+#head-gall{
+	margin-top: 8%;
+	background-color: #141414;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+}
+
+
+[class*="col"]{
+	border: 3px solid green;
+	/*float: left;*/
+}
+
+#gallery-items .card{
+	height: 400px;
+}
+
+#gallery-items .card img {
+	height: 250px;
+	margin-bottom: 50px;
+
+}
 
 
 /* start of custom media queries */
