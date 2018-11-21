@@ -61,9 +61,16 @@ body{
     transform: scaleX(-1);
 
 }*/
+#navbar-index > a,
+#navbar-contact > a,
+#navbar-menu > a,
+#navbar-home > a,
+#navbar-events > a{
+	color: #E51666;
+}
 
 .jumbotron h1{
-	color: #f2f2f2;
+	color: #f2f2fE516662;
 	letter-spacing: 0.5em;
 }
 
@@ -75,30 +82,13 @@ body{
 	border: 1px groove green;
 	/*float: left;*/
 }
-.navbar{
-	/*background-color: pink;*/
-	/*position: fixed;*/
-	/*width: 100vw;*/
-	/*height: 100px;*/
-	/*z-index: 200;*/
-	/*height: 50px;*/
-}
+
 .navbar:hover{
 	background-color: pink;
 
 }
-#navbar > a,
-#navbar-home > a{
-	/*color: #E51666;*/
-	/*font-size: 30px;*/
 
-}
-/*#navbar-home{
-	background-color: pink;
-}*/
-#navbar-contact{
-	background-color: pink;
-}
+
 .subscribe{
 	/*border: 1px groove #FF6978;*/
 	/*background-color: rgba(255, 105, 120, 0.5);*/
@@ -178,11 +168,12 @@ strong{
 
 .homepage-btn{
 	position: absolute;
-	transform:translate(400px,-300px);
+	transform:translate(50px,50px);
 	width: 300px;
 	height: 50px;
 	padding: 0;
 	margin:0;
+	z-index: 1999;
 
 }
 
@@ -225,7 +216,7 @@ strong{
 .fa {
 	padding: 10px;
 	font-size: 30px;
-	width: 5%;
+	width: 15%;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 100%;
@@ -254,34 +245,70 @@ strong{
   color: white;
 }
 
-form > input {
+/*form > input {
 	background-color: pink;
-}
+}*/
 
 
 #contact-page{
 	/*border: 2px solid green;*/
 	margin-top: 58px;
-	height: 90vh;
+	height: 100%;
 }
 
 #map{
 	/*border: 2px solid blue;*/
-	height: 350px;
+	height: 380px;
 }
-#social{
-	height: 50%;
-	/*border: 2px solid red;*/
+.social{
+	width: 200px;
 	height: 90px;
-	bottom: 80px; 
+	position: absolute;
+	bottom: 5px; 
+	border: 5px groove pink;
+	border-radius: 10px;
+	padding-left: 50px
+
 }
 
 #contact-page form,
 .map{
 	border: 5px groove pink;
 	border-radius: 10px;
+
+}
+#username:focus,
+#email:focus,
+#contact:focus,
+#message:focus{
+	background-color: pink;
+}
+#modal-header{
+	width: 100%;
+
 }
 
+#jumbotron-contact{
+	background-color: transparent;
+	height: 20em;
+	border-radius: 0;
+	margin-bottom: 0;
+	border: 5px groove pink;
+	border-radius: 10px;
+}
+#jumbotron-contact > .btn{
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	border: 2px groove #FF6978;
+	background-color: transparent;
+}
+
+
+#jumbotron-contact > .btn:hover{
+	border: 4px groove #FF6978;
+	background-color: rgba(255, 105, 120, 0.5);
+}
 
 #jumbotron-about{
 /*	background-color: #141414;
@@ -353,6 +380,12 @@ form > input {
 	height: 250px;
 	margin-bottom: 50px;
 
+}
+
+footer:hover{
+	background-color: pink;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 /* start of custom media queries */
