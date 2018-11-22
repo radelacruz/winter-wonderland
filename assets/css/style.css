@@ -17,6 +17,13 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 }
+
+#navbar-contact,
+#navbar-icecream,
+#navbar-events{
+	background-color: pink;
+}
+
 /*landing page*/
 .jumbotron hr{
 	background-color: #E51666;
@@ -63,7 +70,7 @@ body{
 }*/
 #navbar-index > a,
 #navbar-contact > a,
-#navbar-menu > a,
+#navbar-icecream > a,
 #navbar-home > a,
 #navbar-events > a{
 	color: #E51666;
@@ -381,11 +388,11 @@ strong{
 }
 
 
-#gallery-items .card{
+#icecream-items .card{
 	height: 350px;
 }
 
-#gallery-items .card img {
+#icecream-items .card img {
 	height: 300px;
 	margin-bottom: 10px;
 
@@ -412,27 +419,40 @@ footer:hover{
 	font-style: center;
 }
 
-#right{
+#icecream-menu{
 	width: 100%;
 	margin-top: 5%;
 	border: 4px pink #FF6978;
 	/*background-color: rgba(255, 105, 120, 0.5);*/
 	padding: 0;
-	margin-right: 0;
-	margin-top: 0;
+	margin:0;
 }
 
-#icecream-item1,
-#icecream-item2{
+#icecream-menupage{
 	margin: 0;
 	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+#icecream-menupage img{
+	width: 100%;
+	height: 100%;
 
+}
+#jumbotron-menu{
+	background-color: #f2f2f2;
+	height: 100vh;
+	border-radius: 0;
+	margin-bottom: 0;
+	padding-top: 15%;
 
 }
 
-/*#icecream-item1-1{
-	background-color: transparent;
-}*/
+#icecream-menupage img:hover{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+
+}
 
 #icecream-item1-1 > img{
 /*	background-image: url(../images/summer-dessert-sweet-ice-cream.jpg);*/
@@ -457,14 +477,14 @@ footer:hover{
 	}*/
 	#navbar-index,
 	#navbar-contact,
-	#navbar-menu,
+	#navbar-icecream,
 	#navbar-home,
 	#navbar-events{
 		background-color: pink;
 	}
 	#navbar-index > a,
 	#navbar-contact > a,
-	#navbar-menu > a,
+	#navbar-icecream > a,
 	#navbar-home > a,
 	#navbar-events > a{
 		color: #E51666;
@@ -473,7 +493,7 @@ footer:hover{
 	}
 	#navbar-index > img,
 	#navbar-contact > img,
-	#navbar-menu > img,
+	#navbar-icecream > img,
 	#navbar-home > img,
 	#navbar-events > img{
 		width: 20px;
