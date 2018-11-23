@@ -18,12 +18,12 @@ body{
 	-o-background-size: cover;
 }
 
-#navbar-contact,
-#navbar-icecream,
+
+/*#navbar-icecream,
 #navbar-events{
 	background-color: transparent;
 }
-
+*/
 /*landing page*/
 .jumbotron hr{
 	background-color: #E51666;
@@ -92,12 +92,14 @@ body{
 
 .navbar:hover{
 	background-color: pink;
+	z-index: 200;
 
 }
 #navbar-nav a:hover{
     text-decoration-line: underline;
     text-decoration-style: solid;
     font-weight: bold;
+    color: white;
 }
 
 .subscribe{
@@ -465,7 +467,9 @@ strong{
 	margin-bottom: 10px;
 
 }
-
+#icecream-text{
+	background-color: white;
+}
 .footer{
 	background-color: rgba(206, 201, 198, 1);
 }
@@ -649,6 +653,7 @@ strong{
 	footer{
 		height: 40px;
 		font-size: 12px;
+		padding: 10px;
 	}
 
 	#navbar-nav{
@@ -849,6 +854,54 @@ strong{
 /*Tablet Styles*/
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+	#navbar-index,
+	#navbar-contact,
+	#navbar-icecream,
+	#navbar-home,
+	#navbar-about,
+	#navbar-events{
+		background-color: pink;
+	}
+	#navbar-index > a,
+	#navbar-contact > a,
+	#navbar-icecream > a,
+	#navbar-home > a,
+	#navbar-about > a,
+	#navbar-events > a{
+		color: #E51666;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	/*landing*/
+	#jumbo-land{
+		height: 100%;
+		padding-top: 20%;
+
+	}
+	.jumbotron h1{
+		letter-spacing: 0.1em;
+		font-size: 30px;
+	}
+	.container > .btn{
+		width: 150px;
+		height: 40px;
+	}
+	.modal {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	footer{
+		height: 40px;
+		font-size: 12px;
+		padding: 10px;
+	}
+
+
+
+
 }
 
 /*Desktop Styles*/
