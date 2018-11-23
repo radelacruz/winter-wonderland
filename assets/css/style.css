@@ -86,7 +86,7 @@ body{
 	width: 50px;
 }
 [class*="col"]{
-	border: 1px groove green;
+	border: 1px groove transparent;
 	/*float: left;*/
 }
 
@@ -140,17 +140,10 @@ body{
 	/*border-radius: 10px;*/
 	/*background-color: transparent;*/
 	padding: 8px;
-
-
-}
-.fa-search{
-/*	background-color: transparent;
-	padding: 0;*/
 }
 
 .search{
-	background-color: pink;
-	opacity: 0.5;
+	background-color: transparent;
 }
 
 
@@ -205,31 +198,6 @@ strong{
 	background-color: pink;
 	border: 3px groove red;
 }
-
-/*.carousel-img{
-	height: 100vh;
-	width: 100%;
-}*/
-
-.footer{
-	/*background-color: pink;*/
-	/*position: fixed;*/
-/*	padding: 0;
-	margin: 0;*/
-	/*left: 0;*/
-	/*bottom: 0;*/
-	/*width: 100%;*/
-	/*background-color: pink;*/
-	/*text-align: center;*/
-	/*height: 40px;*/
-}
-
-
-/*li{
-	list-style-type:none
-}*/
-
-
 
 
 #contact-page{
@@ -326,45 +294,92 @@ strong{
 	background-color: rgba(255, 105, 120, 0.5);
 }
 
-#jumbotron-about{
-/*	background-color: #141414;
+#meetteam{
 	height: 100vh;
-	border-radius: 0;
-	margin-bottom: 0;*/
-	height: 100vh;
-	padding-top: 15%;
-	background-color: #333;
-	border-radius: 0;
-	background-image: url(../images/pexels-photo-533322.jpeg);
+	width: 100vw;
+	background-image: url(../images/878174-thumb.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	/*scroll-behavior: none;*/
 }
+
 #landing-about{
-	color: #f2f2f2;
 	font-size: 5em;
 	padding-top: 25vh;
-	letter-spacing: 5px;
-	font-family: 'Federant', cursive;
+	letter-spacing: 0.1em;
+}
+#mission{
+	height: 30vh;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-right: 50px;
+	padding-left: 50px;
+
 }
 
-#vission-right,
-#vission-left,
+
+#mission-left{
+	background-image: url(../images/icecreambg4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding: 0;
+	margin: 0;
+	color: black;
+	border-bottom-left-radius: 15px;
+	border: 3px groove pink;
+}
+
+/*#mission-left h2{
+	margin: 0;
+	padding: 0;
+}*/
+
+#mission-right{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	/*border-radius: 15px;*/
+	height: 30vh;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	border-top-right-radius: 15px;
+
+}
+
+/*#vision-left-cont{
+	font-size: 16px;
+	padding: 10px;
+}*/
+/*#mission-right-cont{
+	font-size: 16px;
+	padding: 0
+	margin: 0;
+}*/
+
+/*#vision-right,
+#vision-left,
 #mission-right,
 #mission-left{
-	background-color: pink;
+	background-color: #f2f2f2;
 	border: 3px groove pink;
 	border-radius: 15px;
-}
+	height: 50vh;
+	width: 100%;
+	padding: 0
+	margin: 0;
+}*/
 
-#vission-right{
-	/*height: 100%;*/
-	background-image: url(../images/pexels-photo-1362534.jpeg);
+/*#common{
+	background-image: url(../images/ice-cream.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -372,12 +387,25 @@ strong{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	background-color: black;
+	padding: 0;
+	margin:0;
+	width: 100%;
+	height: 70vh;
+}*/
+
+#vision{
+	height: 50vh;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 
-#mission-left{
-	/*height: 100%;*/
-	background-image: url(../images/summer-dessert-sweet-ice-cream.jpg);
+#vision-right{
+	/*background-image: url(../images/home-img3-.jpg);*/
+	background-image: url(../images/icecreambg4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -385,9 +413,49 @@ strong{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	padding-top: 25vh;
+	color: black;
+	padding: 0;
+	margin:0;
+	border-top-right-radius: 15px;
+	border: 3px groove pink;
 }
 
+#vision-left{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	/*border-radius: 15px;*/
+	height: 50vh;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	border-bottom-left-radius: 15px;
+}
+/*#meetteam1{
+	background-color: #f2f2f2;
+	border: 2px groove pink;
+	width: 60%;
+	border-radius: 10px;
+	margin-left: 50px;
+	height: 60%;
+	padding: 0;
+	margin: 20px 20px 20px 20px;
+	margin: 5;
+}*/
 
+
+.img-media{
+	height: 150px;
+	width: 150px;
+	border: 2px groove pink;
+	border-radius: 50%;
+}
+.fa-search{
+	/*background-color: pink;*/
+}
+.search-container{
+	/*background-color: pink;*/
+}
 #icecream-items .card{
 	height: 350px;
 }
@@ -398,11 +466,15 @@ strong{
 
 }
 
-footer:hover{
+.footer{
+	background-color: rgba(206, 201, 198, 1);
+}
+
+/*footer:hover{
 	background-color: pink;
 	margin-left: 0;
 	margin-right: 0;
-}
+}*/
 
 #left{
 	width: 100%;
@@ -481,7 +553,7 @@ footer:hover{
 	/*background-color: pink;*/
 	margin: 0;
 	padding: 150px 20px;
-	background-image: url(../images/icecreambg3.jpg);
+	background-image: url(../images/icecreambg1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -497,7 +569,7 @@ footer:hover{
 	background-color: #f2f2f2;
 	margin: 0;
 	padding: 150px 20px;
-	background-image: url(../images/pexels-photo-533322.jpeg);
+	background-image: url(../images/icecreambg1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: scroll;
@@ -512,7 +584,7 @@ footer:hover{
 	background-color: #f2f2f2;
 	margin: 0;
 	padding: 150px 20px;
-	background-image: url(../images/icecreambg4.jpg);
+	background-image: url(../images/icecreambg1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: scroll;
@@ -545,6 +617,7 @@ footer:hover{
 	#navbar-contact,
 	#navbar-icecream,
 	#navbar-home,
+	#navbar-about,
 	#navbar-events{
 		background-color: pink;
 	}
@@ -552,6 +625,7 @@ footer:hover{
 	#navbar-contact > a,
 	#navbar-icecream > a,
 	#navbar-home > a,
+	#navbar-about > a,
 	#navbar-events > a{
 		color: #E51666;
 		height: 20px;
@@ -561,6 +635,7 @@ footer:hover{
 	#navbar-contact > img,
 	#navbar-icecream > img,
 	#navbar-home > img,
+	#navbar-about > img,
 	#navbar-events > img{
 		width: 20px;
 		height: 20px;
@@ -658,6 +733,115 @@ footer:hover{
 
 	/*end contact page*/
 
+/*about page*/
+#meetteam{
+	height: 100vh;
+	width: 100vw;
+}
+
+#landing-about{
+	font-size: 12px;
+	padding-top: 25vh;
+	letter-spacing: normal;
+}
+/*#mission{
+	height: 30vh;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-right: 50px;
+	padding-left: 50px;
+
+}
+
+
+#mission-left{
+	background-image: url(../images/icecreambg4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding: 0;
+	margin: 0;
+	color: black;
+	border-bottom-left-radius: 15px;
+	border: 3px groove pink;
+}
+*/
+
+#mission-right{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	/*border-radius: 15px;*/
+	height: 30vh;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	border-top-right-radius: 15px;
+
+}
+
+
+
+#vision{
+	height: 50vh;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+#vision-right{
+	/*background-image: url(../images/home-img3-.jpg);*/
+	background-image: url(../images/icecreambg4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding-top: 25vh;
+	color: black;
+	padding: 0;
+	margin:0;
+	border-top-right-radius: 15px;
+	border: 3px groove pink;
+}
+
+#vision-left{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	/*border-radius: 15px;*/
+	height: 50vh;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	border-bottom-left-radius: 15px;
+}
+/*#meetteam1{
+	background-color: #f2f2f2;
+	border: 2px groove pink;
+	width: 60%;
+	border-radius: 10px;
+	margin-left: 50px;
+	height: 60%;
+	padding: 0;
+	margin: 20px 20px 20px 20px;
+	margin: 5;
+}*/
+
+
+.img-media{
+	height: 100px;
+	width: 100px;
+	border: 2px groove pink;
+	border-radius: 50%;
+}
+/*end about page*/
 
 
 }
