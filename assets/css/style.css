@@ -472,7 +472,8 @@ strong{
 }
 .footer{
 	background-color: rgba(206, 201, 198, 1);
-	height: 100%;
+	height: 50px;
+	padding-top: 15px;
 }
 
 /*footer:hover{
