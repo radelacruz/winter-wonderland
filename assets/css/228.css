@@ -472,7 +472,6 @@ strong{
 }
 .footer{
 	background-color: rgba(206, 201, 198, 1);
-	height: 100%;
 }
 
 /*footer:hover{
@@ -535,9 +534,6 @@ strong{
 	transform: scaleX(-1);
 
 }
-#icecream-bg{
-	background-color: white;
-}
 
 #icecream-menu1{
 	height: 500px;
@@ -558,13 +554,21 @@ strong{
 #icecream-menu3{
 	height: 400px;
 	width: 100%;
-	background-color: transparent;
+	background-color: white;
 	margin: 0;
-	padding: 0px 20px;
+	padding: 0 20px;
+/*	background-image: url(../images/icecreambg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
 }
 
 #icecream-menu2{
-	height: 500px;
+	height: 100%;
 	width: 100%;
 	background-color: #f2f2f2;
 	margin: 0;
@@ -581,18 +585,13 @@ strong{
 #icecream-menu4{
 	height: 100%;
 	width: 100%;
-	background-color: #f2f2f2;
+	/*background-color: transparent;*/
 	margin: 0;
-	padding: 50px 0;
+	background-color: white;
+	/*height: 100%;*/
+	/*width: 100%;*/
 }
-#menu4-cont1{
-	width: 100%;
-	border: 2px black;
-	background-color: pink;
-	/*font-size: 16px;*/
-	padding-left: 150px;
-
-
+#menu4{
 
 }
 
