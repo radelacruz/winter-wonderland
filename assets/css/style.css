@@ -19,11 +19,10 @@ body{
 }
 
 
-/*#navbar-icecream,
-#navbar-events{
-	background-color: transparent;
+#landing{
+	height: 100vh;
+
 }
-*/
 /*landing page*/
 .jumbotron hr{
 	background-color: #E51666;
@@ -34,6 +33,7 @@ body{
 	margin: 0 auto;
 	border: 2px groove #FF6978;
 	background-color: transparent;
+	border-radius: 10px;
 }
 .container > .btn:hover{
 	border: 4px groove #FF6978;
@@ -50,7 +50,7 @@ body{
 
 #jumbo-land{
 	height: 100vh;
-	padding-top: 15%;
+	padding-top: 20%;
 	background-color: #333;
 	border-radius: 0;
 	background-image: url(../images/pexels-photo-327131.jpeg);
@@ -68,6 +68,11 @@ body{
 		transform: scaleX(-1);
 
 }*/
+#navbar-index,
+#navbar-home{
+	background-color: pink;
+	border: 3px groove white;
+}
 #navbar-index > a,
 #navbar-contact > a,
 #navbar-icecream > a,
@@ -154,8 +159,8 @@ strong{
 	shape-outside: margin-box;
 	font-weight: bold;
 }
-.fa-smile-wink{
-	color: #E51666;
+.fa-heart{
+	color: red;
 }
 
 
@@ -174,6 +179,7 @@ strong{
 	max-height: 100vh;
 }
 
+
 .homepage-btn{
 	position: absolute;
 	left: 50%;
@@ -185,20 +191,23 @@ strong{
 }
 
 .homepage-btn > .btn{
-	/*height: 100%;*/
-	/*width: 100%;*/
-	background-color: transparent;
-	border: 3px groove pink;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: pink;
+	border: 2px groove pink;
+	/*font-weight: bold;*/
 	/*color: red;*/
-	font-weight: bold;
+	border-radius: 10px;
 }
-.homepage-btn > .btn > a{
+/*.homepage-btn > .btn > a{
 	color: red;
-}
+		font-size: 25px;
+}*/
 
 .homepage-btn > .btn:hover{
-	background-color: pink;
-	border: 3px groove red;
+	border: 4px groove #FF6978;
+	background-color: rgba(255, 105, 120, 0.5);
 }
 
 
@@ -208,6 +217,22 @@ strong{
 	height: 100%;
 	margin-left: 0;
 	margin-right: 0; 
+
+
+
+}
+
+#contactpage{
+	background-image: url(../images/icecreambg1.jpg);
+	/*background-image: url(../images/pexels-photo-327131.jpeg);*//
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/*background-color: pink;*/
 }
 #cotact-page-2{
 	margin-left: 0;
@@ -218,7 +243,9 @@ strong{
 	height: 380px;
 }
 .social{
-	float: right;
+	position: absolute;
+	/*float: right;*/
+	
 }
 
 /* Style all font awesome icons */
@@ -452,6 +479,8 @@ strong{
 	border: 2px groove pink;
 	border-radius: 50%;
 }
+
+
 .fa-search{
 	/*background-color: pink;*/
 }
@@ -467,13 +496,20 @@ strong{
 	margin-bottom: 10px;
 
 }
+#icecream-items .card:hover {
+	transform: scale(1.05);
+	z-index: 1999;
+
+
+}
 #icecream-text{
-	background-color: white;
+	background-color: #f2f2f2;
 }
 .footer{
-	background-color: rgba(206, 201, 198, 1);
+	background-color: #848586;
 	height: 50px;
 	padding-top: 15px;
+	border: 3px groove white;
 }
 
 /*footer:hover{
@@ -537,7 +573,7 @@ strong{
 
 }
 #icecream-bg{
-	background-color: white;
+	background-color: #f2f2f2;
 }
 
 #icecream-menu1{
@@ -584,16 +620,23 @@ strong{
 	width: 100%;
 	background-color: #f2f2f2;
 	margin: 0;
-	padding: 50px 0;
+	padding: 0 20px;
+}
+#icecream-menu5{
+	background-color: #959595;
+	height: 100%;
+	margin: 0;
+	padding: 30px;
+	color: red;
+}
+
+#icecream-menu5 small{
+	font-family: 'Kalam', cursive; 
 }
 #menu4-cont1{
 	width: 100%;
 	border: 2px black;
-	background-color: pink;
-	/*font-size: 16px;*/
 	padding-left: 150px;
-
-
 
 }
 
@@ -905,6 +948,7 @@ strong{
 /*Desktop Styles*/
 
 @media only screen and (min-width: 961px) {
+
 
 }
 /* end of custom media queries */
