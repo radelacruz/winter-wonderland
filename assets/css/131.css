@@ -73,8 +73,7 @@ h2,h3{
 #navbar-index,
 #navbar-home,
 #navbar-icecream,
-#navbar-about,
-#navbar-contact{
+#navbar-about{
 	background-color: pink;
 	border: 3px groove white;
 }
@@ -110,6 +109,22 @@ h2,h3{
     text-decoration-style: solid;
     font-weight: bold;
     color: white;
+}
+
+.subscribe{
+	/*border: 1px groove #FF6978;*/
+	/*background-color: rgba(255, 105, 120, 0.5);*/
+	/*color: red;*/
+	/*width: 40%;*/
+	/*margin-bottom: 20px;*/
+	/*bottom: 20%;*/
+	/*height: 20px;*/
+	/*padding: 0;*/
+	/*margin: 0;*/
+	/*font-size: 10px;*/
+	/*float: right;*/
+
+
 }
 
 .subscribe span{
@@ -202,40 +217,14 @@ strong{
 
 #contact-page{
 	/*border: 2px solid green;*/
-	margin-top: 70px;
-	/*height: 100%;*/
-	margin-left: 0;
-	margin-right: 0;
-	margin-bottom: 0px;
-
-}
-
-#contact-left{
-	background-color: #f2f2f2;
-	height: 400px;
-}
-
-#contact-page > header{
-	background-color: #f2f2f2;
-	height: 110px;
-	margin-bottom: 0px;
-}
-#contact-left > form{
-	height: 350px;
-	font-size: 12px;
-}
-#contact-left input{
-	font-size: 12px;
+	margin-top: 58px;
 	height: 100%;
-	margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0; 
+
+
 
 }
-#contact-left textarea{
-	font-size: 12px;
-	margin-bottom: 10px;
-
-}
-
 
 #contactpage{
 	background-image: url(../images/icecreambg1.jpg);
@@ -248,22 +237,14 @@ strong{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	/*background-color: pink;*/
-	height: 100vh;
 }
 #cotact-page-2{
 	margin-left: 0;
-	margin-right: 0;
-	background-color: #f2f2f2;
-	/*height: 100%;*/
-	padding-top: 20px;
-	padding-bottom: 20px;
+	margin-right: 0; 
 }
 #map{
 	/*border: 2px solid blue;*/
-	height: 400px;
-	background-color: #f2f2f2;
-	padding-top: 0;
-
+	height: 380px;
 }
 .social{
 	position: relative;
@@ -343,7 +324,6 @@ strong{
 	margin-bottom: 0;
 	border: 5px groove pink;
 	border-radius: 10px;
-	padding-bottom: 10px;
 }
 #jumbotron-contact > .btn{
 	width: 200px;
@@ -359,19 +339,47 @@ strong{
 	background-color: rgba(255, 105, 120, 0.5);
 }
 
-
+#meetteam{
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../images/icecreambg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	margin: 0;
+	border: 2px groove pink;
+	padding: 0;
+}
+/*.navbar-brand{
+	margin: 0 ; 
+}*/
 #navbar-nav{
 	margin: 0;
 }
-
+#meetteam1{
+/*	background-color: #f2f2f2;
+	border: 2px groove pink;
+	border-radius: 10px;
+	padding: 20px;
+	margin:0;
+width: 60%;*/
+/*	width: 60%;
+	margin-left: 50px;
+	height: 60%;
+	padding: 0;
+	margin: 20px 20px 20px 20px;
+	margin: 5;*/
+}
 
 #common{
 	padding: 0;
 	margin:0;
 	width: 300px;
-	height: 50px;
-	background: pink;
-	border: 2px groove pink;
+	height: 100px;
 /*	background-image: url(../images/ice-cream.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -389,13 +397,18 @@ strong{
 	padding-top: 50px;
 	letter-spacing: 0.1em;
 }
+#mission{
+	height: 30vh;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-right: 50px;
+	padding-left: 50px;
 
-#meettheteam{
-	height: 100vh;
-	width: 100vw;
-	margin: 0;
-	padding: 50px 20px;
-	background-image: url(../images/icecreambg1.jpg);
+}
+
+
+#mission-left{
+	background-image: url(../images/icecreambg4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -403,50 +416,113 @@ strong{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-}
-
-#meettheteam1{
+	padding: 0;
 	margin: 0;
-	padding: 150px 50px;
-	height: 400px;
+	color: black;
+	border-bottom-left-radius: 15px;
+	border: 3px groove pink;
 }
- 
-#meettheteam1 img {
-	height: 200px;
-	margin-bottom: 10px;
-	border-radius: 100%;
+
+/*#mission-left h2{
+	margin: 0;
+	padding: 0;
+}*/
+
+#mission-right{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	/*border-radius: 15px;*/
+	height: 30vh;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	border-top-right-radius: 15px;
+
 }
-#meettheteam1 .card:hover {
-	transform: scale(1.20);
-	z-index: 1999;
-}
-#meettheteam1 .card{
-	height: 400px;
+
+/*#vision-left-cont{
+	font-size: 16px;
 	padding: 10px;
-	width:  200px;
+}*/
+/*#mission-right-cont{
+	font-size: 16px;
+	padding: 0
+	margin: 0;
+}*/
+
+/*#vision-right,
+#vision-left,
+#mission-right,
+#mission-left{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	border-radius: 15px;
+	height: 50vh;
+	width: 100%;
+	padding: 0
+	margin: 0;
+}*/
+
+/*#common{
+	background-image: url(../images/ice-cream.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-color: black;
+	padding: 0;
+	margin:0;
+	width: 100%;
+	height: 70vh;
+}*/
+
+#vision{
+	height: 50vh;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 
-#mission-vision{
-	padding-top: 20px;
-	margin-top: 30px;
+#vision-right{
+	/*background-image: url(../images/home-img3-.jpg);*/
+	background-image: url(../images/icecreambg4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding-top: 25vh;
+	color: black;
+	padding: 0;
+	margin:0;
+	border-top-right-radius: 15px;
+	border: 3px groove pink;
 }
-#mission{
-	padding-left: 40px;
+
+#vision-left{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	/*border-radius: 15px;*/
+	height: 50vh;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	border-bottom-left-radius: 15px;
 }
 
-
-
-
-
-
-
-/*.img-media{
+.img-media{
 	height: 150px;
 	width: 150px;
 	border: 2px groove pink;
 	border-radius: 50%;
-}*/
+}
 
 
 .fa-search{
@@ -598,7 +674,7 @@ strong{
 }
 #disclaimer{
 	background-color: #959595;
-	/*height: 100%;*/
+	height: 100%;
 	margin: 0;
 	padding: 30px;
 	color: red;
@@ -709,14 +785,9 @@ strong{
 
 
 	/*contact page*/
-
-/*	#contact-page{
-	margin-top: 20px;
-
-}*/
 	#contact-page > header{
-		/*height: 150%;*/
-		margin-top: 0px;
+		height: 70px;
+		/*padding-top: 10px;*/
 	}
 	#contact-page > header > h1{
 		font-size: 12px;
@@ -739,7 +810,7 @@ strong{
 	.modal footer{
 		font-size: 10px;
 		height: 20px;
-		padding: 5px;
+		/*padding: 5px;*/
 		margin-bottom: 5px;
 	}
 
@@ -753,19 +824,14 @@ strong{
 	.map{
 		border: 2px groove pink;
 		border-radius: 10px;
-		margin-bottom: 5px;
+		margin-bottom: 50px;
 
 	}
-#cotact-page-2{
 
-	height: 250px;
-	padding: 10px 0 0 0;
-}
 	#jumbotron-contact{
 		height: 200px;
 		border: 2px groove pink;
 		border-radius: 10px;
-		padding: 10px;
 	}
 	#jumbotron-contact > h1,
 	#jumbotron-contact > p{
@@ -784,7 +850,7 @@ strong{
 		font-size: 12px;
 	}
 
-	/*end contact page
+	/*end contact page*/
 
 /*about page*/
 #meetteam{
@@ -798,13 +864,33 @@ strong{
 	letter-spacing: normal;
 }
 
-#icecream-menu1{
-	height: 430px;
+
+#mission-right{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	/*border-radius: 15px;*/
+	height: 30vh;
 	width: 100%;
-	/*background-color: pink;*/
+	padding: 20px;
 	margin: 0;
-	padding: 50px 20px;
-	background-image: url(../images/icecreambg1.jpg);
+	border-top-right-radius: 15px;
+
+}
+
+
+
+#vision{
+	height: 50vh;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+#vision-right{
+	/*background-image: url(../images/home-img3-.jpg);*/
+	background-image: url(../images/icecreambg4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -812,7 +898,35 @@ strong{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	padding-top: 25vh;
+	color: black;
+	padding: 0;
+	margin:0;
+	border-top-right-radius: 15px;
+	border: 3px groove pink;
 }
+
+#vision-left{
+	background-color: #f2f2f2;
+	border: 3px groove pink;
+	/*border-radius: 15px;*/
+	height: 50vh;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	border-bottom-left-radius: 15px;
+}
+/*#meetteam1{
+	background-color: #f2f2f2;
+	border: 2px groove pink;
+	width: 60%;
+	border-radius: 10px;
+	margin-left: 50px;
+	height: 60%;
+	padding: 0;
+	margin: 20px 20px 20px 20px;
+	margin: 5;
+}*/
 
 
 .img-media{
@@ -821,11 +935,6 @@ strong{
 	border: 2px groove pink;
 	border-radius: 50%;
 }
-
-
-/*#mission{
-	padding-left: 20px;
-}*/
 /*end about page*/
 
 /*icecream page*/
@@ -862,44 +971,6 @@ strong{
 	padding-left: 30px;
 
 }
-#meettheteam1{
-	padding: 80px 0px;
-	height: 100px;
-}
-#meettheteam1 img {
-	height: 100px;
-}
-#meettheteam1 .card{
-	height: 270px;
-	padding: 5px;
-	width:  100px;
-}
-
-#mission-vision{
-	padding-top: 20px;
-	margin-top: 30px;
-}
-
-
-#mission-vision li{
-	font-size: 12px;
-}
-
-#disclaimer{
-	font-size: 12px;
-	padding: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /*end icecream page*/
 
@@ -957,21 +1028,6 @@ strong{
 	p{
 		font-size: 12px;
 	}
-
-#meettheteam1{
-	padding: 150px 10px;
-}
-
-
-#contact-page{
-	/*height: 100vh;*/
-}
-
-
-
-
-
-
 
 
 }
