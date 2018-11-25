@@ -82,7 +82,7 @@ h2,h3{
 #navbar-contact > a,
 #navbar-icecream > a,
 #navbar-home > a,
-#navbar-events > a{
+#navbar-about > a{
 	color: #E51666;
 }
 
@@ -213,12 +213,15 @@ strong{
 #contact-left{
 	background-color: #f2f2f2;
 	height: 400px;
+	margin-top: 15px;
 }
 
 #contact-page > header{
 	background-color: #f2f2f2;
-	height: 110px;
-	margin-bottom: 0px;
+	height: 140px;
+	margin-bottom: 5px;
+	padding-top: 10px;
+	/*border-bottom: 1px solid #E51666;*/
 }
 #contact-left > form{
 	height: 350px;
@@ -239,7 +242,6 @@ strong{
 
 #contactpage{
 	background-image: url(../images/icecreambg1.jpg);
-	/*background-image: url(../images/pexels-photo-327131.jpeg);*//
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -248,12 +250,12 @@ strong{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	/*background-color: pink;*/
-	height: 100vh;
+	/*height: 100vh;*/
 }
 #cotact-page-2{
 	margin-left: 0;
 	margin-right: 0;
-	background-color: #f2f2f2;
+	/*background-color: #f2f2f2;*/
 	/*height: 100%;*/
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -263,6 +265,7 @@ strong{
 	height: 400px;
 	background-color: #f2f2f2;
 	padding-top: 0;
+	margin-top: 15px;
 
 }
 .social{
@@ -280,7 +283,7 @@ strong{
     background-color: rgba(0, 0, 0, 0.3);
     background-size: 100%, 100%;
     border-radius: 50%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 /* Style all font awesome icons */
@@ -337,7 +340,7 @@ strong{
 }
 
 #jumbotron-contact{
-	background-color: transparent;
+	background-color: #f2f2f2;
 	height: 20em;
 	border-radius: 0;
 	margin-bottom: 0;
@@ -644,8 +647,7 @@ strong{
 	#navbar-contact > a,
 	#navbar-icecream > a,
 	#navbar-home > a,
-	#navbar-about > a,
-	#navbar-events > a{
+	#navbar-about > a{
 		color: #E51666;
 		height: 20px;
 		font-size: 10px;
@@ -717,13 +719,24 @@ strong{
 	#contact-page > header{
 		/*height: 150%;*/
 		margin-top: 0px;
-	}
+		padding-top: 40px;
+}
 	#contact-page > header > h1{
 		font-size: 12px;
 		padding: 0;
 		margin-bottom: 0;
 	}
+#contact-left{
+	padding-top: 15px;
+	padding-bottom: 15px;
 
+}
+
+#map{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/*background-color: pink;*/
+}
 	.modal {
 		position: fixed;
 		top: 50%;
@@ -742,6 +755,11 @@ strong{
 		padding: 5px;
 		margin-bottom: 5px;
 	}
+
+.modal-content img{
+	height: 200px;
+	width: 100%;
+}
 
 	.modal-header .close{
 		width: 30px;
