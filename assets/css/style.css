@@ -909,6 +909,15 @@ strong{
 }
 
 
+body,
+#jumbo-land,
+#contactpage,
+#meettheteam,
+#icecream-menu1,
+#icecream-menu2,
+{
+	background-attachment: scroll;
+}
 
 
 
@@ -986,7 +995,15 @@ strong{
 }
 
 
-
+body,
+#jumbo-land,
+#contactpage,
+#meettheteam,
+#icecream-menu1,
+#icecream-menu2,
+{
+	background-attachment: scroll;
+}
 
 
 
