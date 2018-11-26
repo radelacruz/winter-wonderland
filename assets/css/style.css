@@ -106,7 +106,6 @@ h2,h3{
 
 }
 #navbar-nav a:hover{
-    text-decoration-line: underline;
     text-decoration-style: solid;
     font-weight: bold;
     color: white;
@@ -434,7 +433,8 @@ strong{
 	padding-top: 20px;
 	margin-top: 30px;
 }
-#mission{
+#mission,
+#vision-right{
 	padding-left: 40px;
 }
 
@@ -469,6 +469,9 @@ strong{
 	height: 250px;
 	margin-bottom: 10px;
 
+}
+.modal-content{
+	background-color: pink;
 }
 .modal-content img{
 	height: 300px;
@@ -599,17 +602,76 @@ strong{
 	margin: 0;
 	padding: 20px;
 }
+
+#icecream-menu5{
+	height: 600px;
+	width: 100%;
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 50px 10px;
+	background-image: url(../images/icecreambg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#mobile{
+	background-color: #f2f2f2;
+	/*height: 500px;*/
+	/*margin-left: 20px;*/
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+#mobile img{
+	width: 90%;
+	height: 100%;
+	border: 2px groove pink;
+	border-radius: 20px;
+}
+
+#mobile img:hover{
+	transform: scale(1.05);
+	border: 4px groove pink;
+
+}
+
+#menu5-cont{
+	text-align: left;
+	padding-top: 50px;
+}
+
+#menu5-cont hr{
+	background-color: #E51666;
+}
+#menu5-cont > .btn{
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	border: 2px groove #FF6978;
+	background-color: transparent;
+	border-radius: 10px;
+}
+#menu5-cont > .btn:hover{
+	border: 4px groove #FF6978;
+	background-color: rgba(255, 105, 120, 0.5);
+}
+
 #disclaimer{
 	background-color: #959595;
 	/*height: 100%;*/
 	margin: 0;
 	padding: 30px;
-	color: red;
 }
 
-#icecream-menu5 small{
+/*#disclaimer small{
 	font-family: 'Kalam', cursive; 
-}
+}*/
 #menu4-cont1{
 	width: 100%;
 	border: 2px black;
@@ -878,6 +940,7 @@ strong{
 }
 #menu4-cont1{
 	padding-left: 30px;
+	font-size: 12px;
 
 }
 #meettheteam1{
@@ -915,12 +978,15 @@ body,
 #meettheteam,
 #icecream-menu1,
 #icecream-menu2,
+#icecream-menu5,
 {
 	background-attachment: scroll;
 }
 
 
-
+#menu5-cont > h1{
+	font-size: 16px;
+}
 
 
 
