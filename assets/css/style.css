@@ -4,10 +4,59 @@
 	box-sizing: border-box;
 	font-family: 'Federant', cursive;
 }
-html{
-	height: 100%;
+
+
+/*common*/
+#navbar-index,
+#navbar-home,
+#navbar-icecream,
+#navbar-about,
+#navbar-contact{
+	background-color: #FE938C;
+	border: 5px groove white;
+	padding: 5px;
 }
-body{
+#navbar-index > a,
+#navbar-contact > a,
+#navbar-icecream > a,
+#navbar-home > a,
+#navbar-about > a{
+	color: #E51666;
+	font-family: 'Playball', cursive;
+	font-size: 40px;
+	text-shadow: 2px 2px 4px #000000;
+	padding: 0;
+
+}
+#navbar-index > a:active,
+#navbar-contact > a:active,
+#navbar-icecream > a:active,
+#navbar-home > a:active,
+#navbar-about > a:active{
+	color: white;
+
+}
+
+#footer{
+	background-color: #FE938C;
+}
+
+
+small a{
+	text-decoration: none;
+	color: #E51666;
+}
+
+
+
+
+
+
+
+
+/*landing page*/
+#landing{
+	height: 100vh;
 	background-image: url(../images/pexels-photo-327131.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -16,16 +65,8 @@ body{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-}
-
-h2,h3{
-	font-size: 20px;
-}
-#landing{
-	height: 100vh;
 
 }
-/*landing page*/
 .jumbotron hr{
 	background-color: #E51666;
 }
@@ -53,42 +94,17 @@ h2,h3{
 #jumbo-land{
 	height: 100vh;
 	padding-top: 20%;
-	background-color: #333;
+	background-color: rgba(51,51,51, 0.05);
 	border-radius: 0;
-	background-image: url(../images/pexels-photo-327131.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
 
-/*#jumbo-land:hover{
-		-webkit-transform: scaleX(-1);
-		transform: scaleX(-1);
 
-}*/
-#navbar-index,
-#navbar-home,
-#navbar-icecream,
-#navbar-about,
-#navbar-contact{
-	background-color: pink;
-	border: 3px groove white;
-}
-#navbar-index > a,
-#navbar-contact > a,
-#navbar-icecream > a,
-#navbar-home > a,
-#navbar-about > a{
-	color: #E51666;
-}
 
 .jumbotron h1{
 	color: #E51666;
 	letter-spacing: 0.5em;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 60px;
 }
 
 .logo{
@@ -119,11 +135,15 @@ h2,h3{
 
 .subscribe button{
 	font-family: 'Mukta', sans-serif;
-	background-color: green;
+	background-color: #EC7063;
 	color: white;
 	border-radius: 5px;
 	width: 100px;
 
+}
+form > button{
+	background-color: #EC7063;
+	color: white;
 }
 .subs-email{
 	background-color: pink;
@@ -156,15 +176,13 @@ strong{
 
 
 #carousel-home{
-	/*height: 80vh;*/
-	/*border: 3px solid green;*/
 	width: 100%;
 	height: 100%;
 }
 
 #carousel-home img{
 	height: 100vh;
-	max-height: 100vh;
+	border: 5px groove white;
 }
 
 
@@ -172,26 +190,21 @@ strong{
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	padding: 0;
-	margin:0;
-	z-index: 666;
-	transform: translate(-50%, -50%);
+	/*padding: 0;*/
+	/*margin:0;*/
+	/*z-index: 666;*/
+	transform: translate(-50%, 400%);
 }
 
 .homepage-btn > .btn{
 	width: 200px;
 	height: 50px;
 	margin: 0 auto;
-	background-color: pink;
+	background-color: transparent;
 	border: 2px groove pink;
-	/*font-weight: bold;*/
-	/*color: red;*/
 	border-radius: 10px;
 }
-/*.homepage-btn > .btn > a{
-	color: red;
-		font-size: 25px;
-}*/
+
 
 .homepage-btn > .btn:hover{
 	border: 4px groove #FF6978;
@@ -199,10 +212,39 @@ strong{
 }
 
 
+#home-about{
+	height: 100vh;
+	background-image: url(../images/home-about.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+}
+#home-contact{
+	background-image: url(../images/home-contact.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#home-icecream{
+	height: 100vh;
+}
+
+
+
+
+/*contact page*/
+
 #contact-page{
-	/*border: 2px solid green;*/
-	margin-top: 70px;
-	/*height: 100%;*/
+	margin-top: 80px;
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0px;
@@ -248,14 +290,11 @@ strong{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	/*background-color: pink;*/
 	/*height: 100vh;*/
 }
-#cotact-page-2{
+#contact-page-2{
 	margin-left: 0;
 	margin-right: 0;
-	/*background-color: #f2f2f2;*/
-	/*height: 100%;*/
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -276,13 +315,12 @@ strong{
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    height: 100px;
-    width: 50px;
-    outline: black;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    /*border: 1px solid black;*/
+ 	height: 100px;
+	width: 100px;
+	outline: black;
+	background-color: rgba(0, 0, 0, 0.3);
+	background-size: 50%, 50%;
+	border-radius: 50%;
 }
 
 /* Style all font awesome icons */
@@ -318,14 +356,15 @@ strong{
 	color: white;
 }
 
-/*form > input {
-	background-color: pink;
-}*/
+
 #contact-page form,
 .map{
 	border: 5px groove pink;
 	border-radius: 10px;
 
+}
+.form-control{
+	background-color: #FFB99E;
 }
 #username:focus,
 #email:focus,
@@ -353,13 +392,29 @@ strong{
 	margin: 0 auto;
 	border: 2px groove #FF6978;
 	background-color: transparent;
+
+}
+#jumbotron-contact button{
+	background-color: #EC7063;
+	border-radius: 5px;
+	width: 100px;
 }
 
-
-#jumbotron-contact > .btn:hover{
+#jumbotron-contact button:hover{
 	border: 4px groove #FF6978;
 	background-color: rgba(255, 105, 120, 0.5);
+	color: white;
 }
+
+#jumbotron-contact h1{
+	font-size: 50px;
+}
+
+
+
+
+
+
 
 
 #navbar-nav{
@@ -374,16 +429,22 @@ strong{
 	height: 50px;
 	background: pink;
 	border: 2px groove pink;
-/*	background-image: url(../images/ice-cream.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-color: black;*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #landing-about{
@@ -417,6 +478,7 @@ strong{
 	height: 200px;
 	margin-bottom: 10px;
 	border-radius: 100%;
+
 }
 #meettheteam1 .card:hover {
 	transform: scale(1.20);
@@ -426,6 +488,7 @@ strong{
 	height: 400px;
 	padding: 10px;
 	width:  200px;
+	box-shadow: 10px 10px 5px pink;
 }
 
 
@@ -440,26 +503,9 @@ strong{
 
 
 
-
-
-
-
-/*.img-media{
-	height: 150px;
-	width: 150px;
-	border: 2px groove pink;
-	border-radius: 50%;
-}*/
-
-
-.fa-search{
-	/*background-color: pink;*/
-}
-.search-container{
-	/*background-color: pink;*/
-}
 #icecream-items .card{
 	height: 300px;
+	/*box-shadow: 10px 10px 5px pink;*/
 }
 .modal {
 	z-index: 1999;
@@ -468,7 +514,7 @@ strong{
 #icecream-items .card img {
 	height: 250px;
 	margin-bottom: 10px;
-
+	box-shadow: 10px 10px 5px pink;
 }
 .modal-content{
 	background-color: pink;
@@ -476,6 +522,7 @@ strong{
 .modal-content img{
 	height: 300px;
 	width: 100%;
+	box-shadow: 10px 10px 5px grey;
 }
 #icecream-items .card:hover {
 	transform: scale(1.05);
@@ -485,17 +532,7 @@ strong{
 	background-color: #f2f2f2;
 	padding: 5px;
 }
-.footer{
-	background-color: #848586;
-	height: 50px;
-	padding-top: 15px;
-	border: 3px groove white;
-}
 
-.footer small{
-	float: right;
-	font-size: 12px;
-}
 
 #left{
 	width: 100%;
@@ -503,14 +540,7 @@ strong{
 	margin-top: 5%;
 }
 
-/*#head-gall{
-	background-color: transparent;
-	margin-top: 10%;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	border: 3px groove pink;
-	font-style: center;
-}*/
+
 #icecream-items{
 
 	margin-left: 0;
@@ -522,11 +552,14 @@ strong{
 	padding: 0;
 	width: 100%;
 	height: 100vh;
-	/*margin: 20px 0;*/
 }
 #icecream-menupage img{
 	width: 100vw;
 	height: 100vh;
+
+}
+#icecream-menupage h1{
+	font-size: 50px;
 
 }
 #jumbotron-menu{
@@ -669,9 +702,7 @@ strong{
 	padding: 30px;
 }
 
-/*#disclaimer small{
-	font-family: 'Kalam', cursive; 
-}*/
+
 #menu4-cont1{
 	width: 100%;
 	border: 2px black;
@@ -687,6 +718,19 @@ strong{
 #menu-text{
 	padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* start of custom media queries */
 
 /*Mobile Styles*/
@@ -713,6 +757,7 @@ strong{
 		color: #E51666;
 		height: 20px;
 		font-size: 10px;
+
 	}
 	#navbar-index > img,
 	#navbar-contact > img,
@@ -732,15 +777,8 @@ strong{
 	.btn a{
 		font-size: 12px;
 	}
-/*	footer{
-		height: 40px;
-		padding: 10px;
-	}*/
 
-	.footer small{
-	/*float: right;*/
-	font-size: 8px;
-}
+
 
 	#navbar-nav{
 		font-size: 10px;
@@ -758,26 +796,12 @@ strong{
 		letter-spacing: 0.1em;
 		font-size: 20px;
 	}
-	.jumbotron h1{
-		letter-spacing: 0.1em;
-		font-size: 20px;
-	}
+
 	.container > .btn{
 		width: 150px;
 		height: 40px;
 	}
-	/*end landing*/
 
-	/*homepage*/
-	/*end homepage*/
-
-
-	/*contact page*/
-
-/*	#contact-page{
-	margin-top: 20px;
-
-}*/
 	#contact-page > header{
 		/*height: 150%;*/
 		margin-top: 0px;
@@ -836,7 +860,7 @@ strong{
 		margin-bottom: 5px;
 
 	}
-#cotact-page-2{
+#contact-page-2{
 
 	height: 250px;
 	padding: 10px 0 0 0;
@@ -988,9 +1012,14 @@ body,
 	font-size: 16px;
 }
 
+#jumbotron-menu h1{
+			letter-spacing: 0.1em;
+		font-size: 20px;
+}
 
-
-
+#jumbotron-menu button{
+	width: 100%;
+}
 
 
 
@@ -1041,11 +1070,11 @@ body,
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	footer{
+/*	footer{
 		height: 40px;
 		font-size: 12px;
 		padding: 10px;
-	}
+	}*/
 
 	p{
 		font-size: 12px;
@@ -1056,12 +1085,13 @@ body,
 }
 
 
-#contact-page{
-	/*height: 100vh;*/
+#home-about h1{
+		letter-spacing: 0.1em;
+		font-size: 30px;
 }
 
 
-body,
+/*body,
 #jumbo-land,
 #contactpage,
 #meettheteam,
@@ -1069,7 +1099,7 @@ body,
 #icecream-menu2,
 {
 	background-attachment: scroll;
-}
+}*/
 
 
 
@@ -1078,12 +1108,12 @@ body,
 /*Desktop Styles*/
 
 @media only screen and (min-width: 961px) {
-#menu4-cont1{
+/*#menu4-cont1{
 	width: 100%;
 	border: 2px black;
 	padding-left: 150px;
 
-}
+}*/
 
 }
 /* end of custom media queries */
