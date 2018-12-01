@@ -213,7 +213,7 @@ strong{
 
 
 #home-about{
-	height: 100vh;
+	height: 60vh;
 	background-image: url(../images/home-about.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -224,7 +224,82 @@ strong{
 	-o-background-size: cover;
 
 }
+
+#home-about-jumbo{
+	height: 60vh;
+	/*padding-top: 20%;*/
+	background-color: rgba(51,51,51, 0.05);
+	border-radius: 0;
+}
+
+#home-icecream{
+	height: 60vh;
+}
+#home-icecream-menupage{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+}
+#home-icecream-menupage img{
+	width: 100vw;
+	height: 60vh;
+
+}
+#home-icecream-menupage h1{
+	font-size: 50px;
+
+}
+#home-icecream-jumbotron-menu{
+	background-color: #f2f2f2;
+	height: 60vh;
+	border-radius: 0;
+	margin: 0;
+	width: 100%;
+}
+.home-icecream-btn{
+
+}
+.home-icecream-btn{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, 200%);
+}
+
+.home-icecream-btn > .btn{
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: transparent;
+	border: 2px groove pink;
+	border-radius: 10px;
+}
+
+
+.home-icecream-btn > .btn:hover{
+	border: 4px groove #FF6978;
+	background-color: rgba(255, 105, 120, 0.5);
+}
+
+#home-icecream-jumbotron-menu h1,
+#home-icecream-jumbotron-menu hr,
+#home-icecream-jumbotron-menu p{
+	position: relative;
+	top: 20%;
+
+
+}
+
+
+#home-icecream-menupage img:hover{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+
+}
+
 #home-contact{
+	height: 60vh;
 	background-image: url(../images/home-contact.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -233,9 +308,6 @@ strong{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-}
-#home-icecream{
-	height: 100vh;
 }
 
 
@@ -481,7 +553,8 @@ strong{
 
 }
 #meettheteam1 .card:hover {
-	transform: scale(1.20);
+	/*transform: scale(1.20);*/
+	transform: rotate(360deg);
 	z-index: 1999;
 }
 #meettheteam1 .card{
@@ -721,7 +794,50 @@ strong{
 
 
 
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
 
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	background-color: #f2f2f2;
+	color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+	background-color: pink;
+	transform: rotateY(180deg);
+}
 
 
 
@@ -737,18 +853,6 @@ strong{
 @media only screen and (max-width: 400px) {
 
 	/*common*/
-
-/*	#navbar-home{
-		height: 10px;
-	}*/
-	#navbar-index,
-	#navbar-contact,
-	#navbar-icecream,
-	#navbar-home,
-	#navbar-about,
-	#navbar-events{
-		background-color: pink;
-	}
 	#navbar-index > a,
 	#navbar-contact > a,
 	#navbar-icecream > a,
@@ -756,7 +860,7 @@ strong{
 	#navbar-about > a{
 		color: #E51666;
 		height: 20px;
-		font-size: 10px;
+		font-size: 16px;
 
 	}
 	#navbar-index > img,
@@ -1012,12 +1116,13 @@ body,
 	font-size: 16px;
 }
 
+#home-icecream-jumbotron-menu h1,
 #jumbotron-menu h1{
-			letter-spacing: 0.1em;
+		letter-spacing: 0.1em;
 		font-size: 20px;
 }
 
-#jumbotron-menu button{
+#home-icecream-jumbotron-menu button{
 	width: 100%;
 }
 
@@ -1031,14 +1136,7 @@ body,
 /*Tablet Styles*/
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-	#navbar-index,
-	#navbar-contact,
-	#navbar-icecream,
-	#navbar-home,
-	#navbar-about,
-	#navbar-events{
-		background-color: pink;
-	}
+
 	#navbar-index > a,
 	#navbar-contact > a,
 	#navbar-icecream > a,
@@ -1047,7 +1145,7 @@ body,
 	#navbar-events > a{
 		color: #E51666;
 		height: 20px;
-		font-size: 10px;
+		font-size: 26px;
 	}
 
 	/*landing*/
@@ -1070,11 +1168,7 @@ body,
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-/*	footer{
-		height: 40px;
-		font-size: 12px;
-		padding: 10px;
-	}*/
+
 
 	p{
 		font-size: 12px;
@@ -1091,29 +1185,13 @@ body,
 }
 
 
-/*body,
-#jumbo-land,
-#contactpage,
-#meettheteam,
-#icecream-menu1,
-#icecream-menu2,
-{
-	background-attachment: scroll;
-}*/
-
-
 
 }
 
 /*Desktop Styles*/
 
 @media only screen and (min-width: 961px) {
-/*#menu4-cont1{
-	width: 100%;
-	border: 2px black;
-	padding-left: 150px;
 
-}*/
 
 }
 /* end of custom media queries */
