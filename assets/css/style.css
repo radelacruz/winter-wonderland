@@ -186,23 +186,25 @@ strong{
 	top: 50%;
 	/*padding: 0;*/
 	/*margin:0;*/
-	/*z-index: 666;*/
-	transform: translate(-50%, 400%);
+	z-index: 666;
+	transform: translate(-50%, 50%);
+
 }
 
-.homepage-btn > .btn{
-	width: 200px;
-	height: 50px;
-	margin: 0 auto;
-	background-color: transparent;
-	border: 2px groove pink;
-	border-radius: 10px;
+.homepage-btn > p {
+	font-size: 30px;
+	/*width: 200px;*/
+	padding-left: 10px;
+	height: 25px;
+	color: #E51666;
+	text-shadow: 2px 2px 5px #000000;
 }
-
-
-.homepage-btn > .btn:hover{
-	border: 4px groove #FF6978;
-	background-color: rgba(255, 105, 120, 0.5);
+.homepage-btn > .fas {
+	font-size: 70px;
+	height: 25px;
+	color: #E51666;
+	padding-left: 60px;
+	text-shadow: 2px 2px 5px #000000;
 }
 
 
@@ -218,6 +220,7 @@ strong{
 	-o-background-size: cover;
 
 }
+
 
 #home-about-jumbo{
 	height: 60vh;
